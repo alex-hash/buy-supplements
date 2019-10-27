@@ -1,0 +1,24 @@
+{
+  "name": "buy-supplements",
+  "version": "1.0.0",
+  "description": "Html and css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server www --files www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-hash/buy-supplements.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-hash/buy-supplements/issues"
+  },
+  "homepage": "https://github.com/alex-hash/buy-supplements#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
