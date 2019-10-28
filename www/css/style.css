@@ -1,0 +1,215 @@
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: orange;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+/*Clases comunes*/
+
+.cta {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 0;
+}
+
+/*HEader*/
+
+header {
+    background-image: url('/img/proteina.jpg');
+    background-size: cover;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+header h1 {
+    color: black;
+    margin: 0 0 1rem 0;
+}
+
+header nav {
+    flex-grow: 1;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 0.5rem;
+}
+
+header nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Sections*/
+
+body>section {
+    padding: 2rem 1rem;
+}
+
+section#info h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+section#productos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section#productos ul li {
+    background-color: black;
+    color: white;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section#productos h2 {
+    text-align: center;
+}
+
+section#productos p {
+    padding: 0 1rem;
+}
+
+section#productos ul li a {
+    color: black;
+    background-color: lightblue;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+section#contact {
+    background-color: white;
+    margin-bottom: 4rem;
+}
+
+section#contact h2 {
+    color: orange
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+form input:not([type='checkbox']),
+form textarea,
+form select {
+    border: 2px solid black;
+    width: 100%;
+    background-color: orange;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+form textarea {
+    min-height: 15rem;
+    resize: none;
+}
+
+
+@media(min-width: 800px) {
+    header {
+        min-height: 25rem;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    header>*:not(:last-child) {
+        flex-basis: 33%;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    header nav {
+        order: -1;
+        flex-grow: 0;
+    }
+
+    header a.cta {
+        margin-left: auto
+    }
+
+    body>section>h2 {
+        font-size: 4rem;
+    }
+
+    section#info p {
+        columns: 2;
+    }
+
+    section#productos ul {
+        display: flex;
+    }
+
+    section#productos ul li {
+        margin: 1rem;
+        flex-basis: 33%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#productos ul li img {
+        height: 30rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    section#productos ul li h2 {
+        font-size: 2rem;
+    }
+
+    section#productos ul li p {
+        flex-grow: 1;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    form fieldset {
+        margin: 1rem;
+        flex-basis: calc(50% - 2rem);
+    }
+
+    form fieldset.comments,
+    form fieldset.newsletter {
+        flex-basis: 100%;
+    }
+
+    form button {
+        margin-left: 1rem;
+    }
+
+}
